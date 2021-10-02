@@ -1,0 +1,42 @@
+.performance {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+.performance__heading {
+  margin-bottom: 50px;
+}
+.performance__list {
+  @extend %list;
+  display: flex;
+  position: relative;
+}
+.performance__item {
+  width: 370px;
+}
+.performance__item:not(:last-child) {
+  margin-right: 30px;
+}
+.performance__link {
+  position: absolute;
+
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+
+  background-color: $gray-color-2;
+}
+.performance__title {
+  color: $white-color;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  @include font(700, 14px, 1.14, 0.03em);
+
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+}

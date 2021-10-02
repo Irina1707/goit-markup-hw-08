@@ -1,0 +1,46 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid $primary-border-color;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+.page-header__menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .page-header__icon-cross {
+    display: none;
+  }
+  &.is-open .page-header__icon-cross {
+    display: block;
+  }
+  &.is-open .page-header__icon-menu {
+    display: none;
+  }
+}
+.page-header__contacts {
+  @extend %list;
+}
+
+.page-header__contacts-link {
+  color: $primary-text-color;
+
+  @include font(500, 14px, 1.14, 0.02em);
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color-1;
+  }
+}
+
+.page-header__contact-icon {
+  fill: currentColor;
+}

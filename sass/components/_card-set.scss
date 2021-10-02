@@ -1,0 +1,10 @@
+.card-set {
+  @extend %list;
+}
+.card-set__item {
+  width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

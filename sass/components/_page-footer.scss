@@ -1,0 +1,51 @@
+.page-footer {
+  background-color: $primary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  text-align: center;
+}
+
+.page-footer__block-one {
+  width: 231px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.page-footer__address {
+  color: $white-color;
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+}
+.page-footer__contacts {
+  @extend %list;
+  margin-top: 8px;
+}
+.page-footer__contacts-item {
+  margin-top: 8px;
+}
+.page-footer__contacts-link {
+  color: $gray-color-1;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color-1;
+  }
+}
+
+.page-footer__block-two {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.page-footer__title {
+  margin-bottom: 20px;
+  color: $white-color;
+
+  @include font(700, 14px, 1.14, 0.03em);
+
+  text-transform: uppercase;
+}
