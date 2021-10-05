@@ -1,7 +1,10 @@
 .team {
   background-color: $secondary-background-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  @media screen and(max-width:767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .team__heading {
   margin-bottom: 30px;
@@ -18,12 +21,27 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &:not(:last-child) {
+    @media screen and(min-width: $desktop) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .team__wrap {
-  padding: 30px 122px 24px 122px;
+  @media screen and (max-width: 767px) {
+    padding: 30px 122px 24px 122px;
+  }
+  @media screen and(min-width: $tablet) and (max-width: 1199px) {
+    padding: 30px 74px 24px 74px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 30px 32px 30px 32px;
+  }
 }
 
 .team__member {

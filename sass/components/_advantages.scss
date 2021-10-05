@@ -1,6 +1,8 @@
 .advantages {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and(max-width:767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .advantages__title {
   color: $title-text-color;
@@ -9,6 +11,14 @@
   margin-bottom: 10px;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
+}
+.team__heading {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .advantages__list {
   @extend %list;

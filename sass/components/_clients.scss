@@ -1,9 +1,13 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and(max-width:767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .clients__heading {
-  margin-bottom: 30px;
+  @media screen and(max-width:767px) {
+    margin-bottom: 30px;
+  }
 }
 .clients__list {
   @extend %list;
@@ -12,10 +16,14 @@
   justify-content: center;
 }
 .clients__item:nth-child(-n + 4) {
-  margin-bottom: 30px;
+  @media screen and(max-width:767px) {
+    margin-bottom: 30px;
+  }
 }
 .clients__item:nth-child(2n + 1) {
-  margin-right: 30px;
+  @media screen and(max-width:767px) {
+    margin-right: 30px;
+  }
 }
 .clients__link {
   display: flex;

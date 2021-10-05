@@ -5,6 +5,18 @@
   width: 450px;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &:not(:nth-child(3n)) {
+    @media screen and(min-width:$desktop) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    @media screen and(min-width:$desktop) {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -6,8 +6,6 @@
 
   transition: transform 250ms $timing-function;
 
-  width: 450px;
-  height: 609px;
   padding: 40px;
 
   background-color: $white-color;
@@ -16,6 +14,12 @@
   border-radius: 4px;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+@media screen and(max-width:479) {
+  .modal {
+    width: 450px;
+    height: 609px;
   }
 }
 .modal__close {
