@@ -2,10 +2,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform 250ms $timing-function;
-
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background-color: $white-color;
@@ -16,10 +18,10 @@
     transform: translate(-50%, -50%) scale(0.9);
   }
 }
-@media screen and(max-width:479) {
+@media screen and(min-width:$desktop) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 581px;
   }
 }
 .modal__close {

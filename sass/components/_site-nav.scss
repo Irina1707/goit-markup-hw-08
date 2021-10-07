@@ -1,9 +1,15 @@
 .site-nav {
   @extend %list;
   display: flex;
-
   &--position {
-    margin-left: 93px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 88px;
+    }
+  }
+  &--position {
+    @media screen and (min-width: $desktop) {
+      margin-left: 93px;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -11,9 +17,14 @@
     display: none;
   }
 }
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav__link {
   display: block;
-
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: $title-text-color;
 
   @include font(500, 14px, 1.14, 0.02em);
@@ -27,5 +38,21 @@
 
   &--active {
     color: $accent-color-1;
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: $accent-color-1;
+    border-radius: 2px;
+    opacity: 0;
+  }
+  &--active:after {
+    opacity: 1;
   }
 }

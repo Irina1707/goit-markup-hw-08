@@ -3,14 +3,33 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
+  @media screen and(min-width:$desktop) {
+    display: flex;
+  }
 }
-
+.page-footer__wrap {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $tablet) and(max-width:1199px) {
+    flex-wrap: wrap;
+  }
+}
 .page-footer__block-one {
   width: 231px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+
+  @media screen and(max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .page-footer__address {
@@ -21,9 +40,17 @@
 .page-footer__contacts {
   @extend %list;
   margin-top: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 .page-footer__contacts-item {
   margin-top: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 .page-footer__contacts-link {
   color: $gray-color-1;
@@ -37,15 +64,22 @@
 
 .page-footer__block-two {
   width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-}
-.page-footer__title {
-  margin-bottom: 20px;
-  color: $white-color;
 
-  @include font(700, 14px, 1.14, 0.03em);
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 102px;
+  }
 
-  text-transform: uppercase;
+  .page-footer__title {
+    margin-bottom: 20px;
+    color: $white-color;
+
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+  }
 }
