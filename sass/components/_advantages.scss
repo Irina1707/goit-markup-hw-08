@@ -29,6 +29,10 @@
   }
 }
 .advantages__item {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: $tablet) and(max-width: 1199px) {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
@@ -38,6 +42,7 @@
     width: calc((100% - 8 * 15px) / 4);
   }
 }
+
 .advantages__image {
   display: flex;
   justify-content: center;
