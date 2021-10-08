@@ -1,7 +1,7 @@
 .social-network {
   @extend %list;
   display: flex;
-
+  justify-content: center;
   &--position {
     margin-top: 16px;
   }
