@@ -1448,10 +1448,6 @@ img {
   }
 }
 
-.card-set__item {
-  width: 450px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set__item {
     margin: 15px;
