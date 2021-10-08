@@ -8,7 +8,6 @@
   }
 }
 .card-set__item {
-  width: 450px;
   @media screen and(min-width:$tablet) and(max-width:1199px) {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
