@@ -1,5 +1,6 @@
 .mailing {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and(max-width:1199px) {
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
